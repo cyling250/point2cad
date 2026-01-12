@@ -6,9 +6,9 @@ import torch
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from tqdm import tqdm
 
-from point2cad.fitting_one_surface import process_one_surface
-from point2cad.io_utils import save_unclipped_meshes, save_clipped_meshes, save_topology
-from point2cad.utils import seed_everything, continuous_labels, normalize_points, make_colormap_optimal
+from fitting_one_surface import process_one_surface
+from io_utils import save_unclipped_meshes, save_clipped_meshes, save_topology
+from utils import seed_everything, continuous_labels, normalize_points, make_colormap_optimal
 
 
 def process_multiprocessing(cfg, uniq_labels, points, labels, device):

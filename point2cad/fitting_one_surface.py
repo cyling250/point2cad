@@ -7,11 +7,10 @@ import warnings
 from tqdm import tqdm
 
 from dependencies.geomfitty.geomfitty._util import distance_line_point
-from point2cad.fitting_utils import project_to_plane, visualize_basic_mesh
-from point2cad.layers import PositionalEncoding, ResBlock, SirenLayer, SirenWithResblock
-from point2cad.primitive_forward import Fit
-from point2cad.utils import get_rng
-from point2cad.utils import sample_inr_mesh
+from fitting_utils import project_to_plane, visualize_basic_mesh
+from layers import PositionalEncoding, ResBlock, SirenLayer, SirenWithResblock
+from primitive_forward import Fit
+from utils import get_rng, sample_inr_mesh
 
 
 def process_one_surface(label, points, labels, cfg, device):

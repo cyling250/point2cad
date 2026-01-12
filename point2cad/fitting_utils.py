@@ -5,7 +5,7 @@ import torch
 import torch.nn.functional as F
 from torch.autograd import Function
 
-from point2cad.utils import tessalate_points, guard_exp
+from utils import tessalate_points, guard_exp
 
 
 class LeastSquares:

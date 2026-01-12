@@ -7,7 +7,7 @@ import scipy
 import trimesh
 from collections import Counter
 
-from point2cad.utils import suppress_output_fd
+from utils import suppress_output_fd
 
 
 def save_unclipped_meshes(meshes, color_list, out_path):

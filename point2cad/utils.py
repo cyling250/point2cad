@@ -131,7 +131,7 @@ def make_colormap_optimal(num_colors=64):
         palette.append(pos)
         ranking_remaining += c_dist[pos]
     path_colormap = str(
-        pathlib.Path(__file__).parent.parent.resolve()
+        pathlib.Path(__file__).parent.resolve()
         / "dependencies"
         / "perceptual_colormap"
         / "colormap2d.png"
@@ -226,7 +226,7 @@ def sample_inr_mesh(fit_out, mesh_dim=20, uv_margin=0.2):
     faces = []
     vertex_colors = []
     path_colormap = str(
-        pathlib.Path(__file__).parent.parent.resolve()
+        pathlib.Path(__file__).parent.resolve()
         / "dependencies"
         / "perceptual_colormap"
         / "colormap2d.png"

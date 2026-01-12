@@ -1,9 +1,9 @@
 import numpy as np
 import torch
 
-from point2cad.fitting_utils import LeastSquares, customsvd
-from point2cad.primitive_utils import fitcone, fitcylinder
-from point2cad.utils import regular_parameterization, guard_sqrt, rotation_matrix_a_to_b, get_rotation_matrix
+from fitting_utils import LeastSquares, customsvd
+from primitive_utils import fitcone, fitcylinder
+from utils import regular_parameterization, guard_sqrt, rotation_matrix_a_to_b, get_rotation_matrix
 
 EPS = np.finfo(np.float32).eps
 
